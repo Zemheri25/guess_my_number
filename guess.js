@@ -16,7 +16,7 @@ function singnumber() {
     exactNumber.value = Math.floor(Math.random()*101);
     username = prompt("Please enter your username")
     username1.innerHTML = `${username}'s Highscore`
-    highscore.innerHTML = 0
+    
 }
 
 checkButton.addEventListener("click", check1);
@@ -72,5 +72,5 @@ function again () {
     number.value = ""
     exactNumber.value = Math.floor(Math.random()*101)
     soru.style.visibility = "visible"
-    trueFalse.innerHTML = ""
+    trueFalse.innerHTML = "Lets Start"
 }
