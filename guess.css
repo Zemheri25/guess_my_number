@@ -97,7 +97,7 @@ main {
 
 }
 
-.check__button button:hover {
+.check__button1 button:hover {
     background-color: black;
     color: white;
 }
@@ -127,7 +127,7 @@ main {
     position: relative;
     z-index: 1;
     top: -55%;
-    left: 28%;
+    left: 30%;
     display: flex;
     justify-content: center;
     border-radius: 10px;
