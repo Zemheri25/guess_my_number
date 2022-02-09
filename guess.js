@@ -5,7 +5,8 @@ let exactNumber = document.getElementById("exact__number2");
 let soru = document.querySelector(".soru");
 let trueFalse = document.querySelector(".true-false");
 let highscore = document.getElementById("hightscore");
-let guessTime = document.querySelector(".guess_time")
+let guessTime = document.querySelector(".guess_time");
+let cong = document.querySelector(".cong")
 
 
 window.addEventListener("load", singnumber)
@@ -27,13 +28,13 @@ function check1() {
            
             
             
-        } else if(number.value > exactNumber.value) {
+        } else if(Number(number.value) > Number(exactNumber.value)) {
             trueFalse.innerHTML = "Please go down"
             trueFalse.style.color = "red"
             guessTime.innerHTML ++
             number.value = ""
             
-        } else if (number.value < exactNumber.value) {
+        } else if (Number(number.value) < Number(exactNumber.value)) {
             trueFalse.innerHTML = "Please go higher"
             trueFalse.style.color = "red"
             guessTime.innerHTML ++
@@ -45,10 +46,19 @@ function check1() {
             soru.style.visibility = "visible";
             trueFalse.innerHTML = "lets start again";
             guessTime.innerHTML = 0
+            exactNumber.value = Math.floor(Math.random()*101)
             
         } 
     
-        
+        if(highscore.innerHTML >= 20) {
+            cong.innerHTML = "Congratulations ** You win the Game :)"
+            
+        } else if (highscore.innerHTML < 0) {
+            highscore.style.color = "red"
+        } else if (highscore.innerHTML > 0) {
+            highscore.style.color = "green"
+        }
+
 
         
 }

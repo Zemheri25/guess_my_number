@@ -19,6 +19,10 @@ header {
     justify-content: space-between;
 }
 
+header div {
+    margin-top: 4rem;
+}
+
 .again__button {
     
     width: 7rem;
