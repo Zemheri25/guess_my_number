@@ -6,14 +6,17 @@ let soru = document.querySelector(".soru");
 let trueFalse = document.querySelector(".true-false");
 let highscore = document.getElementById("hightscore");
 let guessTime = document.querySelector(".guess_time");
-let cong = document.querySelector(".cong")
-
+let cong = document.querySelector(".cong");
+let username1 = document.querySelector(".username1"); 
+let username;
 
 window.addEventListener("load", singnumber)
 
 function singnumber() {
-    exactNumber.value = Math.floor(Math.random()*101)
-    
+    exactNumber.value = Math.floor(Math.random()*101);
+    username = prompt("Please enter your username")
+    username1.innerHTML = `${username}'s Highscore`
+    highscore.innerHTML = 0
 }
 
 checkButton.addEventListener("click", check1);
@@ -51,7 +54,7 @@ function check1() {
         } 
     
         if(highscore.innerHTML >= 20) {
-            cong.innerHTML = "Congratulations ** You win the Game :)"
+            cong.innerHTML = `Congratulations ${username}.You win the game`
             
         } else if (highscore.innerHTML < 0) {
             highscore.style.color = "red"
