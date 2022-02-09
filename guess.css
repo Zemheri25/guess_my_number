@@ -31,12 +31,15 @@ header div {
 }
 
 .again__button button {
-    width: 100%;
-    height: 100%;
+    width: 8rem;
+    height: 6rem;
     border: none;
     color: black;
     font-size: 2rem;
     cursor: pointer;
+    margin-top: 0rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px white;
 }
 
 .again__button button:hover {
