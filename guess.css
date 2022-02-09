@@ -1,0 +1,141 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    background-color: #222222;
+}
+
+header {
+    
+    height: 12rem;
+    border-bottom: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.again__button {
+    
+    width: 7rem;
+    height: 5rem;
+    box-shadow: 2px 2px 5px white;
+}
+
+.again__button button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.again__button button:hover {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 27rem;
+}
+
+.check__button {
+    
+    width: 30%;
+    height: 18rem;
+    text-align: center;
+}
+
+.exact__number1 {
+    
+    width: 30%;
+    height: 18rem;
+    text-align: center;
+}
+
+.score {
+    width: 30%;
+    
+    height: 18rem;
+    text-align: center;
+    
+}
+
+.check__button1 input {
+    height: 10rem;
+    color: black;
+    font-size: 3rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.check__button1 button {
+    width: 8rem;
+    height: 6rem;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px white;
+
+}
+
+.check__button button:hover {
+    background-color: black;
+    color: white;
+}
+
+#exact__number2{
+    height: 10rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px white;
+    width: 10rem;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    
+}
+
+.score p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.soru {
+    width: 10rem;
+    background-color: red;
+    color: black;
+    height: 10rem;
+    position: relative;
+    z-index: 1;
+    top: -55%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+
+}
+
+.soru h1 {
+    margin-top: 3rem;
+}
+
+
+.guessh2 {
+    margin-top: -10rem;
+}
